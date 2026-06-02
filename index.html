@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kannur Cheruth - Novels</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #1e1e2f, #111119); color: #fff; min-height: 100vh; padding: 30px 15px; }
+        .container { max-width: 700px; background: rgba(255, 255, 255, 0.05); padding: 40px 20px; margin: 0 auto; border-radius: 20px; backdrop-filter: blur(10px); box-shadow: 0 15px 35px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); text-align: center; }
+        
+        /* പ്രൊഫൈൽ സ്റ്റൈൽ */
+        .profile-card { margin-bottom: 40px; }
+        .profile-img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 4px solid #ff4757; box-shadow: 0 0 20px rgba(255, 71, 87, 0.5); }
+        h1 { font-size: 28px; margin-top: 15px; color: #ff4757; letter-spacing: 1px; }
+        .bio { font-size: 16px; color: #ccc; margin-top: 8px; font-style: italic; }
+        
+        /* സ്ലൈഡ്‌ഷോ ബോക്സ് */
+        .slideshow-box { position: relative; max-width: 360px; margin: 30px auto; background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
+        .mySlides { display: none; animation: fadeIn 0.5s ease-in-out; }
+        .novel-img { width: 100%; height: 400px; object-fit: cover; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.5); border: 2px solid rgba(255,255,255,0.1); }
+        .novel-title { font-size: 22px; color: #fff; margin: 15px 0 10px 0; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.6); }
+        
+        /* പ്രീവിയസ് - നെക്സ്റ്റ് ബട്ടണുകൾ */
+        .prev, .next { cursor: pointer; position: absolute; top: 45%; width: 40px; height: 40px; line-height: 40px; color: #fff; background: rgba(255, 71, 87, 0.8); font-weight: bold; font-size: 20px; border-radius: 50%; user-select: none; text-decoration: none; transition: 0.3s; }
+        .prev { left: -20px; }
+        .next { right: -20px; }
+        .prev:hover, .next:hover { background: #ff4757; box-shadow: 0 0 15px #ff4757; transform: scale(1.1); }
+        
+        /* ലിങ്ക് ബട്ടൺ */
+        .btn { display: inline-block; padding: 12px 25px; background: linear-gradient(90deg, #ff4757, #ff6b81); color: white; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; transition: 0.3s; box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4); width: 85%; margin-top: 10px; }
+        .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(255, 71, 87, 0.6); }
+        
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-card">
+            <img src="ChatGPT Image May 30, 2026, 06_46_21 PM.png" alt="Profile" class="profile-img">
+            <h1>Kannur Cheruth</h1>
+            <p class="bio">എന്റെ നോവലുകളുടെ ലോകത്തിലേക്ക് സ്വാഗതം...</p>
+        </div>
+        
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0;">
+        
+        <div class="slideshow-box">
+            
+            <div class="mySlides">
+                <div class="novel-title">ചുവന്ന മഴയുടെ രഹസ്യം</div>
+                <img src="IMG_20260529_125102.png" class="novel-img" alt="Novel 1">
+                <a href="https://share.aksharathalukal.in/s/58010/view" target="_blank" class="btn">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക</a>
+            </div>
+
+            <div class="mySlides">
+                <div class="novel-title">രഹസ്യം വിഴുങ്ങിയ നിഴൽ</div>
+                <img src="IMG_20260602_002204.png" class="novel-img" alt="Novel 2">
+                <a href="https://share.aksharathalukal.in/s/58585/view" target="_blank" class="btn">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക</a>
+            </div>
+
+            <div class="mySlides">
+                <div class="novel-title">മഴവില്ല് പെയ്ത സായാഹ്നം</div>
+                <img src="ChatGPT Image May 30, 2026, 06_30_11 PM.png" class="novel-img" alt="Novel 3">
+                <a href="https://share.aksharathalukal.in/s/58270/view" target="_blank" class="btn">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക</a>
+            </div>
+
+            <div class="mySlides">
+                <div class="novel-title">ശൂന്യതയുടെ കയ്യൊപ്പ് (The Cipher of Sunya)</div>
+                <img src="IMG_20260602_163102.png" class="novel-img" alt="Novel 4">
+                <a href="https://share.aksharathalukal.in/s/58585/view" target="_blank" class="btn">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക</a>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slides[slideIndex-1].style.display = "block";  
+        }
+    </script>
+
+</body>
+</html>
