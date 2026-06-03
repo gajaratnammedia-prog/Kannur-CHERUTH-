@@ -15,21 +15,24 @@
         h1 { font-size: 28px; margin-top: 15px; color: #ff4757; letter-spacing: 1px; }
         .bio { font-size: 16px; color: #ccc; margin-top: 8px; font-style: italic; }
         
-        /* സ്ലൈഡ്‌ഷോ ബോക്സ് */
-        .slideshow-box { position: relative; max-width: 360px; margin: 30px auto; background: rgba(0, 0, 0, 0.3); padding: 20px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); box-shadow: 0 10px 25px rgba(0,0,0,0.3); }
-        .mySlides { display: none; animation: fadeIn 0.5s ease-in-out; }
-        .novel-img { width: 100%; height: 400px; object-fit: cover; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.5); border: 2px solid rgba(255,255,255,0.1); }
-        .novel-title { font-size: 22px; color: #fff; margin: 15px 0 10px 0; font-weight: bold; text-shadow: 2px 2px 4px rgba(0,0,0,0.6); }
+        /* ഓട്ടോമാറ്റിക് സ്ലൈഡ്‌ഷോ ቦക്സ് */
+        .slideshow-box { position: relative; max-width: 340px; margin: 30px auto; background: rgba(0, 0, 0, 0.3); padding: 15px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); }
+        .mySlides { display: none; animation: fadeIn 0.8s ease-in-out; }
+        .novel-img { width: 100%; height: 380px; object-fit: cover; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.5); }
+        .novel-title { font-size: 20px; color: #fff; margin: 12px 0; font-weight: bold; }
         
-        /* പ്രീവിയസ് - നെക്സ്റ്റ് ബട്ടണുകൾ */
-        .prev, .next { cursor: pointer; position: absolute; top: 45%; width: 40px; height: 40px; line-height: 40px; color: #fff; background: rgba(255, 71, 87, 0.8); font-weight: bold; font-size: 20px; border-radius: 50%; user-select: none; text-decoration: none; transition: 0.3s; }
-        .prev { left: -20px; }
-        .next { right: -20px; }
-        .prev:hover, .next:hover { background: #ff4757; box-shadow: 0 0 15px #ff4757; transform: scale(1.1); }
+        /* ലിസ്റ്റ് സ്റ്റൈൽ */
+        .novel-list-section { text-align: left; margin-top: 40px; padding: 10px; }
+        .list-heading { font-size: 22px; color: #ff4757; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
         
-        /* ലിങ്ക് ബട്ടൺ */
-        .btn { display: inline-block; padding: 12px 25px; background: linear-gradient(90deg, #ff4757, #ff6b81); color: white; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 16px; transition: 0.3s; box-shadow: 0 5px 15px rgba(255, 71, 87, 0.4); width: 85%; margin-top: 10px; }
-        .btn:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(255, 71, 87, 0.6); }
+        .novel-item { display: flex; align-items: center; background: rgba(255, 255, 255, 0.03); margin-bottom: 15px; padding: 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); transition: 0.3s; text-decoration: none; color: #fff; }
+        .novel-item:hover { background: rgba(255, 71, 87, 0.1); transform: translateX(5px); border-color: #ff4757; }
+        
+        .novel-number { font-size: 20px; font-weight: bold; color: #ff4757; margin-right: 15px; width: 25px; text-align: center; }
+        .list-thumb { width: 60px; height: 80px; object-fit: cover; border-radius: 50px; margin-right: 15px; border: 1px solid rgba(255,255,255,0.2); }
+        .list-details { flex-grow: 1; }
+        .list-title { font-size: 18px; font-weight: bold; margin-bottom: 4px; }
+        .list-click { font-size: 13px; color: #ff4757; font-weight: bold; }
         
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
@@ -43,53 +46,75 @@
             <p class="bio">എന്റെ നോവലുകളുടെ ലോകത്തിലേക്ക് സ്വാഗതം...</p>
         </div>
         
-        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0;">
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 20px 0;">
         
         <div class="slideshow-box">
             
-            
 
             <div class="mySlides">
+                <img src="IMG_20260602_002204.png" class="novel-img" alt="Novel 1">
                 <div class="novel-title">രഹസ്യം വിഴുങ്ങിയ നിഴൽ</div>
-                <img src="IMG_20260602_002204.png" class="novel-img" alt="Novel 2">
-                <a href="https://share.aksharathalukal.in/s/58585/view" target="_blank" class="btn">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക</a>
             </div>
 
             <div class="mySlides">
-                <div class="novel-title">മഴവില്ല് പെയ്ത സായാഹ്നം</div>
-                <img src="ChatGPT Image May 30, 2026, 06_30_11 PM.png" class="novel-img" alt="Novel 3">
-                <a href="https://share.aksharathalukal.in/s/58270/view" target="_blank" class="btn">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക</a>
+                <img src="ChatGPT Image May 30, 2026, 06_30_11 PM.png" class="novel-img" alt="Novel 2">
+                <div class="novel-title">മഴവില്ലь പെയ്ത സായാഹ്നം</div>
             </div>
 
             <div class="mySlides">
+                <img src="IMG_20260602_163102.png" class="novel-img" alt="Novel 3">
                 <div class="novel-title">ശൂന്യതയുടെ കയ്യൊപ്പ് (The Cipher of Sunya)</div>
-                <img src="IMG_20260602_163102.png" class="novel-img" alt="Novel 4">
-                <a href="https://share.aksharathalukal.in/s/58585/view" target="_blank" class="btn">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക</a>
             </div>
+        </div>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="novel-list-section">
+            <div class="list-heading">എല്ലാ നോവലുകളും (List)</div>
             
+
+            <a href="https://share.aksharathalukal.in/s/58585/view" target="_blank" class="novel-item">
+                <div class="novel-number">1</div>
+                <img src="IMG_20260602_002204.png" class="list-thumb" alt="Thumb 2">
+                <div class="list-details">
+                    <div class="list-title">രഹസ്യം വിഴുങ്ങിയ നിഴൽ</div>
+                    <div class="list-click">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക ➔</div>
+                </div>
+            </a>
+
+            <a href="https://share.aksharathalukal.in/s/58270/view" target="_blank" class="novel-item">
+                <div class="novel-number">2</div>
+                <img src="ChatGPT Image May 30, 2026, 06_30_11 PM.png" class="list-thumb" alt="Thumb 3">
+                <div class="list-details">
+                    <div class="list-title">മഴവില്ല് പെയ്ത സായാഹ്നം</div>
+                    <div class="list-click">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക ➔</div>
+                </div>
+            </a>
+
+            <a href="https://share.aksharathalukal.in/s/58679/view" target="_blank" class="novel-item">
+                <div class="novel-number">3</div>
+                <img src="IMG_20260602_163102.png" class="list-thumb" alt="Thumb 4">
+                <div class="list-details">
+                    <div class="list-title">ശൂന്യതയുടെ കയ്യൊപ്പ് (The Cipher of Sunya)</div>
+                    <div class="list-click">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക ➔</div>
+                </div>
+            </a>
+
         </div>
     </div>
 
     <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
+        let slideIndex = 0;
+        showSlides();
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function showSlides(n) {
+        function showSlides() {
             let i;
             let slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
             for (i = 0; i < slides.length; i++) {
                 slides[i].style.display = "none";  
             }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
             slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000); // ഓരോ 3 സെക്കൻഡിലും ഫോട്ടോകൾ തനിയെ മാറും
         }
     </script>
 
