@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kannur Cheruth - Novels</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #1e1e2f, #111119); color: #fff; min-height: 100vh; padding: 30px 15px; }
+        .container { max-width: 700px; background: rgba(255, 255, 255, 0.05); padding: 40px 20px; margin: 0 auto; border-radius: 20px; backdrop-filter: blur(10px); box-shadow: 0 15px 35px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1); text-align: center; }
+        
+        /* പ്രൊഫൈൽ സ്റ്റൈൽ */
+        .profile-card { margin-bottom: 40px; }
+        .profile-img { width: 130px; height: 130px; border-radius: 50%; object-fit: cover; border: 4px solid #ff4757; box-shadow: 0 0 20px rgba(255, 71, 87, 0.5); }
+        h1 { font-size: 28px; margin-top: 15px; color: #ff4757; letter-spacing: 1px; }
+        .bio { font-size: 16px; color: #ccc; margin-top: 8px; font-style: italic; }
+        
+        /* ഓട്ടോമാറ്റിക് സ്ലൈഡ്‌ഷോ ቦക്സ് */
+        .slideshow-box { position: relative; max-width: 340px; margin: 30px auto; background: rgba(0, 0, 0, 0.3); padding: 15px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.05); }
+        .mySlides { display: none; animation: fadeIn 0.8s ease-in-out; }
+        .novel-img { width: 100%; height: 380px; object-fit: cover; border-radius: 10px; box-shadow: 0 8px 16px rgba(0,0,0,0.5); }
+        .novel-title { font-size: 20px; color: #fff; margin: 12px 0; font-weight: bold; }
+        
+        /* ലിസ്റ്റ് സ്റ്റൈൽ */
+        .novel-list-section { text-align: left; margin-top: 40px; padding: 10px; }
+        .list-heading { font-size: 22px; color: #ff4757; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 8px; }
+        
+        .novel-item { display: flex; align-items: center; background: rgba(255, 255, 255, 0.03); margin-bottom: 15px; padding: 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); transition: 0.3s; text-decoration: none; color: #fff; }
+        .novel-item:hover { background: rgba(255, 71, 87, 0.1); transform: translateX(5px); border-color: #ff4757; }
+        
+        .novel-number { font-size: 20px; font-weight: bold; color: #ff4757; margin-right: 15px; width: 25px; text-align: center; }
+        .list-thumb { width: 60px; height: 80px; object-fit: cover; border-radius: 5px; margin-right: 15px; border: 1px solid rgba(255,255,255,0.2); }
+        .list-details { flex-grow: 1; }
+        .list-title { font-size: 18px; font-weight: bold; margin-bottom: 4px; }
+        .list-click { font-size: 13px; color: #ff4757; font-weight: bold; }
+        
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile-card">
+            <img src="ChatGPT Image May 30, 2026, 06_46_21 PM.png" alt="Profile" class="profile-img">
+            <h1>Kannur Cheruth</h1>
+            <p class="bio">എന്റെ നോവലുകളുടെ ലോകത്തിലേക്ക് സ്വാഗതം...</p>
+        </div>
+        
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 20px 0;">
+        
+        <div class="slideshow-box">
+            
+
+            <div class="mySlides">
+                <img src="IMG_20260602_002204.png" class="novel-img" alt="Novel 1">
+                <div class="novel-title">രഹസ്യം വിഴുങ്ങിയ നിഴൽ</div>
+            </div>
+
+            <div class="mySlides">
+                <img src="ChatGPT Image May 30, 2026, 06_30_11 PM.png" class="novel-img" alt="Novel 2">
+                <div class="novel-title">മഴവില്ല് പെയ്ത സായാഹ്നം</div>
+            </div>
+
+            <div class="mySlides">
+                <img src="IMG_20260602_163102.png" class="novel-img" alt="Novel 3">
+                <div class="novel-title">ശൂന്യതയുടെ കയ്യൊപ്പ് (The Cipher of Sunya)</div>
+            </div>
+
+            <div class="mySlides">
+                <img src="IMG_20260603_112213.jpg" class="novel-img" alt="Novel 4">
+                <div class="novel-title">The Ghost Ship</div>
+            </div>
+        </div>
+
+        <div class="novel-list-section">
+            <div class="list-heading">എല്ലാ നോവലുകളും (List)</div>
+            
+            
+
+            <a href="https://share.aksharathalukal.in/s/58585/view" target="_blank" class="novel-item">
+                <div class="novel-number">1</div>
+                <img src="IMG_20260602_002204.png" class="list-thumb" alt="Thumb 1">
+                <div class="list-details">
+                    <div class="list-title">രഹസ്യം വിഴുങ്ങിയ നിഴൽ</div>
+                    <div class="list-click">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക ➔</div>
+                </div>
+            </a>
+
+            <a href="https://share.aksharathalukal.in/s/58270/view" target="_blank" class="novel-item">
+                <div class="novel-number">2</div>
+                <img src="ChatGPT Image May 30, 2026, 06_30_11 PM.png" class="list-thumb" alt="Thumb 2">
+                <div class="list-details">
+                    <div class="list-title">മഴവില്ല് പെയ്ത സായാഹ്നം</div>
+                    <div class="list-click">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക ➔</div>
+                </div>
+            </a>
+
+            <a href="https://share.aksharathalukal.in/s/58679/view" target="_blank" class="novel-item">
+                <div class="novel-number">3</div>
+                <img src="IMG_20260602_163102.png" class="list-thumb" alt="Thumb 3">
+                <div class="list-details">
+                    <div class="list-title">ശൂന്യതയുടെ കയ്യൊപ്പ് (The Cipher of Sunya)</div>
+                    <div class="list-click">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക ➔</div>
+                </div>
+            </a>
+
+            <a href="https://share.aksharathalukal.in/s/58759/view" target="_blank" class="novel-item">
+                <div class="novel-number">4</div>
+                <img src="IMG_20260603_112213.jpg" class="list-thumb" alt="Thumb 4">
+                <div class="list-details">
+                    <div class="list-title">The Ghost Ship</div>
+                    <div class="list-click">വായിക്കാൻ ഇവിടെ ക്ലിക്ക് ചെയ്യുക ➔</div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex-1].style.display = "block";  
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+
+</body>
+</html>
